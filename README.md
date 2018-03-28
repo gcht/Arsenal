@@ -1,4 +1,6 @@
 Welcome to the Arsenal wiki!
+# macaca
+* [使用macaca进行移动端hybird自动化测试(一)](https://segmentfault.com/a/1190000007037799)
 # mac bash
 * [mac 安装ant 增加环境变量](http://www.jianshu.com/p/34bdfb5943e0)
 # JS and mobile
