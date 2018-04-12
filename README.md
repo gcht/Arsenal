@@ -117,4 +117,14 @@ alter table `iuapkb`.`kbIndexInfo` convert to character set utf8;
 * [￼财务报销建模－贝叶斯](http://pstatic.geekbang.org/pdf/593b7b39cfcc8.pdf?e=1499666604&token=eHNJKRTldoRsUX0uCP9M3icEhpbyh3VF9Nrk5UPM:OcWmj9XeuSCnd7p9y5xxccSAoZM=)
 # Tomcat常用命令
 ## 查看日志
-在bin下执行tail -f catalina.out  
+在bin下执行tail -f catalina.out 
+
+# Eclipse MAC  快捷键
+command+shift+T   查找类
+Ctrl+Alt+I －－看Java文件中变量的相关信息
+Ctrl+Alt+↓ 复制当前行到下一行(复制增加)
+Ctrl+Alt+↑ 复制当前行到上一行(复制增加)
+Alt+↓ 当前行和下面一行交互位置(特别实用,可以省去先剪切,再粘贴了)
+Alt+↑ 当前行和上面一行交互位置(同上)
+Alt+← 前一个编辑的页面
+Alt+→ 下一个编辑的页面(当然是针对上面那条来说了)
