@@ -123,19 +123,21 @@ alter table `iuapkb`.`kbIndexInfo` convert to character set utf8;
 在bin下执行tail -f catalina.out 
 
 # Eclipse MAC  快捷键
-command+shift+T   查找类    
-Ctrl+Alt+I －－看Java文件中变量的相关信息    
-Ctrl+Alt+↓ 复制当前行到下一行(复制增加)    
-Ctrl+Alt+↑ 复制当前行到上一行(复制增加)    
-Alt+↓ 当前行和下面一行交互位置(特别实用,可以省去先剪切,再粘贴了)     
-Alt+↑ 当前行和上面一行交互位置(同上)    
-Alt+← 前一个编辑的页面    
-Alt+→ 下一个编辑的页面(当然是针对上面那条来说了)    
-## debug 快捷键 实用！实用！实用！实用！
-command+shift+T   查找类  ***
-command+T   查找接口实现  ***
-   
-Command+Alt+← 回到光标上一处  ***
-Command+Alt+→ 回到光标下一处  ***
 
-Command+Shift+I 查看代码片段运行结果 ****
+command+shift+T   查找类    
+`Ctrl+Alt+I` －－看Java文件中变量的相关信息    
+`Ctrl+Alt+↓` 复制当前行到下一行(复制增加)    
+`Ctrl+Alt+↑` 复制当前行到上一行(复制增加)    
+`Alt+↓` 当前行和下面一行交互位置(特别实用,可以省去先剪切,再粘贴了)     
+`Alt+↑` 当前行和上面一行交互位置(同上)    
+`Alt+←` 前一个编辑的页面    
+`Alt+→` 下一个编辑的页面(当然是针对上面那条来说了) 
+
+## debug 快捷键 实用！实用！实用！实用！
+`command+shift+T`   查找类  ***
+`command+T`   查找接口实现  ***
+   
+`command+alt+←` 回到光标上一处  ***
+`command+alt+→` 回到光标下一处  ***
+
+`command+shift+I` 查看代码片段运行结果 ****
