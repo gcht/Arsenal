@@ -22,18 +22,20 @@ display:none  隐藏对应的元素，在文档布局中不再给它分配空间
 visibility:hidden  隐藏对应的元素，但是在文档布局中仍保留原来的空间。
 ```   
 ### CSS中 link 和@import 的区别是？
-
-
-    A：(1) link属于HTML标签，而@import是CSS提供的; (2) 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;(3) import只在IE5以上才能识别，而link是HTML标签，无兼容问题; (4) link方式的样式的权重 高于@import的权重.
-
+```
+* (1) link属于HTML标签，而@import是CSS提供的; 
+* (2) 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+* (3) import只在IE5以上才能识别，而link是HTML标签，无兼容问题; 
+* (4) link方式的样式的权重 高于@import的权重.
+```
 ### position的absolute与fixed共同点与不同点
-
-    A：共同点：
+```
+A：共同点：
     1.改变行内元素的呈现方式，display被置为block；2.让元素脱离普通流，不占据空间；3.默认会覆盖到非定位元素上
-
-    B不同点：
+    
+B不同点：
     absolute的”根元素“是可以设置的，而fixed的”根元素“固定为浏览器窗口。当你滚动网页，fixed元素与浏览器窗口之间的距离是不变的。
-
+```
 ### 介绍一下CSS的盒子模型？
 
     1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
