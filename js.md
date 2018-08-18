@@ -15,14 +15,12 @@ HTML&CSS
 # CSS 相关问题
 
 
-### display:none和visibility:hidden的区别？
+### display:none和visibility:hidden的区别？ 
+```
+display:none  隐藏对应的元素，在文档布局中不再给它分配空间，它各边的元素会合拢，就当他从来不存在。
 
-
-    display:none  隐藏对应的元素，在文档布局中不再给它分配空间，它各边的元素会合拢，
-    就当他从来不存在。
-
-    visibility:hidden  隐藏对应的元素，但是在文档布局中仍保留原来的空间。
-
+visibility:hidden  隐藏对应的元素，但是在文档布局中仍保留原来的空间。
+```   
 ### CSS中 link 和@import 的区别是？
 
 
