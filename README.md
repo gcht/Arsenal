@@ -94,8 +94,8 @@ Welcome to the Arsenal wiki!
 ## mysql
 * [Mac MySQL与Workbench的链接问题](http://www.jianshu.com/p/c7a0f9491370)
 * [solr6.2.1配置(含mysql数据导入)](https://my.oschina.net/u/2289011/blog/761302)
-*BLOB转UTF8
-SELECT CONVERT(jsontemp USING utf8) as content FROM cloud_uitemplate.uitemplate_temp where pk_temp='f38fcf40-386a-4bc7-8c83-5b5bc00b47a9';     
+* BLOB转UTF8    
+SELECT CONVERT(jsontemp USING utf8) as content FROM cloud_uitemplate.uitemplate_temp where pk_temp='f38fcf40-386a-4bc7-8c83-5b5bc00b47a9';         
 ## mysql如何修改root密码
 使用命令行修改，用mysqladmin           
 格式：mysqladmin -u用户名 -p旧密码 password 新密码             
