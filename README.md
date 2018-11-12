@@ -51,7 +51,8 @@ Welcome to the Arsenal wiki!
 * git撤销提交，回退记录
 > - git reset as345 --hard
 > - git push origin master:master --force
-
+## nodejs
+* [nodejs个版本](https://nodejs.org/en/blog/release/v8.11.3/)
 ## react
 * [React+Webpack快速上手指南](http://www.jianshu.com/p/418e48e0cef1)
 
