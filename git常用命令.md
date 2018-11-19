@@ -9,7 +9,8 @@
 > `git branch -b`  
 > `git checkout xxx-branch`      创建新分支xxx-branch  
 > `git checkout -b yan`  创建新分支yan,并切换过去  
-
+# git branch -d
+`git branch -d develop_gct` 删除develop_gct分支
 # git reset 
 撤销同时销毁记录  
 > git reset fa04a2 默认是保留reset
