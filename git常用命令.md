@@ -9,8 +9,9 @@
 > `git branch -b`  
 > `git checkout xxx-branch`      创建新分支xxx-branch  
 > `git checkout -b yan`  创建新分支yan,并切换过去  
-# git branch -d
-`git branch -d develop_gct` 删除develop_gct分支
+# git branch -D
+`git branch -D develop_gct` 删除develop_gct分支
+`git push origin --delete develop_diwork_gct1122`  删除远程develop_diwork_gct1122分支
 # git reset 
 撤销同时销毁记录  
 > git reset fa04a2 默认是保留reset
