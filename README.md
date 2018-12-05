@@ -1,5 +1,7 @@
 Welcome to the Arsenal wiki!
-
+## redis
+- Windows系统安装Redis（详细）
+[https://blog.csdn.net/weixin_33446857/article/details/77893896](https://blog.csdn.net/weixin_33446857/article/details/77893896)
 ## macaca
 * [jquery.treeview.js](https://www.cnblogs.com/zq-boke/p/5830145.html)
 ## macaca
