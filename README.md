@@ -1,4 +1,10 @@
 Welcome to the Arsenal wiki!
+# vscode
+## 快捷键
+- F12 进入
+- alt + command + <-
+
+
 ## redis
 - Windows系统安装Redis（详细）
 [https://blog.csdn.net/weixin_33446857/article/details/77893896](https://blog.csdn.net/weixin_33446857/article/details/77893896)
