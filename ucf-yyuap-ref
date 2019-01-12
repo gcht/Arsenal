@@ -1,0 +1,157 @@
+ # OMC融合yyuap-ref参照方案
+- 1
+* 在package.json内增加两个依赖包"yyuap-ref": "^1.1.53"  "fetch-jsonp": "^1.1.3" 并将依赖包用npm下载到本地
+
+* 1.引入参照
+增加api.js 和 util.js 到yxyweb/client/common 下新建的文件夹addCommon内
+
+* 打开yxyweb/client/common 下的cube.js 
+    1.代码最上面引入两个依赖包
+    ```sh
+    /**
+     *  修改1
+     *  引入我们自己的参照和数据请求方法
+     */
+    import { getRefInfo} from './addCommon/api';
+    import createModal from 'yyuap-ref';
+    ```
+  2.增加调我们自己参照方法
+    ```sh
+    /**
+     *  修改2
+     * 此处需要判断是调营销云参照，还是我们自己的参照 (暂时写死，调我们自己参照)       
+     */
+    this.getRefInfoCommon(refcode,afterOkClick);
+    return false;  
+             
+    if (vm) {
+        cb.utils.extend(vm.getParams(), { where: where });
+        vm.initData();
+        if (callback)
+          callback(vm);
+        return;
+      }
+    ```
+    3.给refcode赋定值，将afterOkClick方法提前
+     ```sh
+      var vm = this.getCache('vm');
+      var refcode = this._get_data('ctrlType');
+     // 赋值部分
+     /**
+       *  修改3
+       *  暂时将参照code写死，并将afterOkClick方法提前
+       */
+     refcode = "refSchool";
+     // 提前部分
+      var _this = this;
+      var afterOkClick = function (value) {
+        _this.setValue(value, true);
+      };
+      
+      this.getRefInfoCommon(refcode,afterOkClick);
+      return false;
+    ```
+    4.给model原型上新增两个方法 translateRefData， getRefInfoCommon 
+     ```sh
+     /**
+   * 修改4
+   * 参照选择完以后数据处理 （部分变量写死，后期会继续完善）
+   */
+      model.prototype.translateRefData = function (value) {
+        // var textField = this._get_data('textField');
+        // var valueField = this._get_data('valueField');
+        // var separator = this._get_data('separator');
+        var textField = "refname";
+        var valueField = "refpk";
+        var separator = ",";
+        var multiple = true;
+        var text = [], select, value1;
+        // if (!this._get_data('multiple')) {
+        if (!multiple) {
+            if (!value.length) {
+                select = value;
+                text.push('');
+                value1 = null;
+            } else {
+                select = value[0];
+                text.push(select[textField]);
+                value1 = select[valueField];
+            }
+        } else {
+            select = value;
+            value1 = [];
+            select.forEach(function (item) {
+                if (!item.hasOwnProperty(textField) || !item.hasOwnProperty(valueField)) return;
+                text.push(item[textField]);
+                value1.push(item[valueField]);
+            });
+        }
+        return { text: text.join(separator), select: select, value: value1 };
+  };
+  /**
+   * 修改5
+   * 增加调我们自己参照方法
+   */
+  model.prototype.getRefInfoCommon = function (refCode,callBack) {
+    // 通过此接口获取参照信息 
+     getRefInfo(refCode).then((json)=>{
+            let conifgUrl = "http://ref.app.yyuap.com";
+            var option = {
+              title: '弹窗标题',
+              refType:2,
+              isRadio:false,
+              hasPage:false,
+              backdrop:false,
+              treeloadData:false,
+              param:{//url请求参数
+                  refCode:'currency_ref',
+                  refname: "租户级币种",
+                  tenantId:'xxx',
+                  locale:"zh_CN",
+                  sysId:'xxx',
+                  clientParam:{},
+                  refModelUrl: conifgUrl+"/staff/ref/socialcurrency/"
+              },
+              refModelUrl:{
+                  TreeUrl:conifgUrl+'/ref/rest/iref_ctr/blobRefTree', //树请求
+                  GridUrl:conifgUrl+'/ref/rest/iref_ctr/commonRefsearch',//单选多选请求
+                  TableBodyUrl:conifgUrl+'/ref/rest/iref_ctr/blobRefTreeGrid',//表体请求
+                  TableBarUrl:conifgUrl+'/ref/rest/iref_ctr/refInfo',//表头请求
+                  totalDataUrl:conifgUrl+'/ref/rest/iref_ctr/matchPKRefJSON',//根据refcode请求完整数据
+              },
+              checkedArray:[],
+              onCancel: function (p) {
+                console.log(p)
+              },
+              onSave: function (selects) {
+                console.log(selects);
+                callBack(selects);
+              },
+              className:'',
+          }
+          const enumRef = {
+            RefTree:1,
+            CommonRef:4,
+            RefGridTree:3,
+            RefGrid:2
+          }
+          if (json && json.refUIType) {
+              option.refType = enumRef[json.refUIType]
+          }
+          option.title = json.refName;
+          option.param.refCode = refCode;
+          option.param.refname = json.refName;
+          option.param.refModelUrl = json.refModelUrl;
+          setTimeout (() => {
+              createModal(option)
+          },100) 
+      })
+  };
+    ```
+    
+
+
+ 
+ 
+
+
