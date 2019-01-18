@@ -51,6 +51,9 @@ history版本会递增，不影响之前提交的内容
   > 谨慎使用！谨慎使用！谨慎使用!
 
 
+### git merge
+- `git merge xxx-branch`    把xxx-branch分支合并到当前分支    
+例如： 当前是master分支，想把develop分支合并到master分支，就执行  `git merge develop`
 --------------------------------------
 
 # git log
