@@ -8,6 +8,11 @@ Welcome to the Arsenal wiki!
 ## redis
 - Windows系统安装Redis（详细）
 [https://blog.csdn.net/weixin_33446857/article/details/77893896](https://blog.csdn.net/weixin_33446857/article/details/77893896)
+
+## nodejs和npm各个版本
+- [nodejs各个版本 https://nodejs.org/download/release/](https://nodejs.org/download/release/)
+- [nodejs和npm各版本关系 https://nodejs.org/zh-cn/download/releases/](https://nodejs.org/zh-cn/download/releases/)
+
 ## macaca
 * [jquery.treeview.js](https://www.cnblogs.com/zq-boke/p/5830145.html)
 ## macaca
