@@ -8,6 +8,8 @@ Welcome to the Arsenal wiki!
 ## redis
 - Windows系统安装Redis（详细）
 [https://blog.csdn.net/weixin_33446857/article/details/77893896](https://blog.csdn.net/weixin_33446857/article/details/77893896)
+- mac redis 安装
+    - 启动： redis-server /usr/local/etc/redis.conf
 
 ## nodejs和npm各个版本
 - [nodejs各个版本 https://nodejs.org/download/release/](https://nodejs.org/download/release/)
