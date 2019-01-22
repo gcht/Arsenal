@@ -12,6 +12,9 @@
 # git branch -D
 `git branch -D develop_gct` 删除develop_gct分支    
 `git push origin --delete develop_diwork_gct1122`  删除远程develop_diwork_gct1122分支    
+
+
+--------------------------------------------------
 # git reset 
 撤销同时销毁记录  
 > git reset fa04a2 默认是保留reset
@@ -19,7 +22,7 @@
 
 撤销remote的master分支的记录  
 > `git reset fa042c --hard`  
-> `git push orgin master:master --force`   不加--force的话，会提交提交的记录比较老，不能提交 
+> `git push orgin master:master --force`   不加--force的话，会提示提交的记录比较老，不能提交 
 
 # git revert  
 撤销某次操作，此次操作之前和之后的commit和history都会保留，并且把这次撤销作为一次最新的提交到history中（git log）    
@@ -30,6 +33,8 @@
 git revert是提交一个新的版本，将需要revert的版本的内容再反向修改回去。    
 history版本会递增，不影响之前提交的内容    
 
+
+--------------------------------------------------------------
 # git push 
 一般形式为` git push <远程主机名> <本地分支名>:<远程分支名> `     
 例如     
@@ -40,6 +45,7 @@ history版本会递增，不影响之前提交的内容
 ### 全称用法
 > `git push origin mybranch:mybranch`      origin代表远程   src:dst     将本地`src分支`提交到`dst分支`    
 
+-------------------------------------------------------
 ### 省略用法：        
 - `git push origin mybranch` （省略了<dst>，等价于`git push origin master:master`）     
   > 如果远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建
