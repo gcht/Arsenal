@@ -3,7 +3,29 @@ Welcome to the Arsenal wiki!
 ## 快捷键
 - F12 进入
 - alt + command + <-
+## lanch
 
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch yan omc_test_web",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "debug:server"
+            ],
+            "port": 9229
+        }
+    ]
+}
+```
 
 ## redis
 - Windows系统安装Redis（详细）
