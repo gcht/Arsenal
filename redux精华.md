@@ -33,15 +33,18 @@
 # 4.dispatch -- dispathc.js
 ```
   import store from './store.js';
-  export default (obj) => {
-    store.dispatch(obj);
+  export default (action) => {
+    store.dispatch(action);
   };
 ```
 
 # 5. App
 ```
   const changeState = (type) => {
-    store.dispatch({type});
+    store.dispatch({
+      type:type,
+      msg:'点击了‘ + type + '菜单’
+    });
   };
   class Footer extends React.Component {   
     render() {
