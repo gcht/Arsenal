@@ -60,6 +60,7 @@ history版本会递增，不影响之前提交的内容
 # git merge
 - `git merge xxx-branch`    把xxx-branch分支合并到当前分支    
 例如： 当前是master分支，想把develop分支合并到master分支，就执行  `git merge develop`
+> 合并解决冲突后，相当于修改，需要重新git add、 git commit、  git push
 
 
 
