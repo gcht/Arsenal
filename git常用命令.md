@@ -23,6 +23,13 @@
 撤销remote的master分支的记录  
 > `git reset fa042c --hard`  
 > `git push orgin master:master --force`   不加--force的话，会提示提交的记录比较老，不能提交 
+保护分支会有提示：        
+remote: GitLab: You are not allowed to force push code to a protected branch on this project.    
+取消保护再push    
+
+
+
+
 
 # git revert  
 撤销某次操作，此次操作之前和之后的commit和history都会保留，并且把这次撤销作为一次最新的提交到history中（git log）    
