@@ -1,3 +1,19 @@
+# git stash
+> git stash list
+> git stash push
+> git stash pop
+
+
+
+# git pull --rebase
+重新建立base（基准），git fetch + git merge    
+把当前的修改合提到最前面
+
+
+
+
+# git cherry-pick 32259aa35d0702d2d05c648938798f9a5bd4b9e7
+
 
 # git checkout
 > `git checkout .`  
