@@ -1,4 +1,12 @@
 Welcome to the Arsenal wiki!
+
+# linux 查杀端口进程
+- 查询占用某端口的进程
+> `lsof -i:3110`
+
+- 接下来继续在命令行输入 （以3110为例）
+> `kill 1592`
+
 # vscode
 ## 快捷键
 - F12 进入
