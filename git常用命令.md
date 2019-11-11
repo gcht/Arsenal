@@ -10,6 +10,28 @@
 把当前的修改合提到最前面
 
 
+# git rebase
+- 合并多次提交：    
+> `git rebase -i HEAD~2`     
+i的意思是：interactive，HEAD~2为在历史的前两个提交，同理，HEAD~4就是历史的前四个提交。
+
+具体如下：    
+1. 命令行输入：git rebase -i HEAD~2 （i的意思是：interactive，HEAD~2为在历史的前两个提交，同理，HEAD~4就是历史的前四个提交。）
+
+2. vim出现如下所以文件信息，前面两行就是你的提交信息，比如第一行分别对应为：pick(使用提交)、56a06ef(提交的ID)、change 1: remove one blank line(提交的描述信息)    
+
+3. 将第二行的pick改成s, 也就是squash(挤压合并)，作用是：使用提交，将此提交与之前的提交合并。   然后保存文件退出vim。    
+
+4. 提交你的代码，git commit -a, vim出现如下所以文件信息：注意看：第4行和第8行分别对应这你第一次和第二次的提交描述信息，这时你就要将这两条描述信息合并为一条。
+
+5. 将之前的两条提交描述信息，修改合并为一条，然后保存退出vim，如下所示：
+
+6. 保存退出后，push代码：git push origin master -f (注意：因为时rebase操作，所以要加-f, 强制push), 推送完成， 如下所以，完成将两个提交合并为一个。
+
+参见：【https://blog.csdn.net/jerechen/article/details/89556281】(https://blog.csdn.net/jerechen/article/details/89556281)
+
+
+
 
 
 # git cherry-pick 32259aa35d0702d2d05c648938798f9a5bd4b9e7
@@ -28,6 +50,7 @@
 # git branch -D
 `git branch -D develop_gct` 删除develop_gct分支    
 `git push origin --delete develop_diwork_gct1122`  删除远程develop_diwork_gct1122分支    
+
 
 
 --------------------------------------------------
