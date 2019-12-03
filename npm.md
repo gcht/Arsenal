@@ -11,18 +11,45 @@
 
 
 # npm 切换淘宝镜像
-```npm config set registry https://registry.npm.taobao.org```     
+### 更改镜像地址的方法（以淘宝为例）：
+```
+    npm config set registry https://registry.npm.taobao.org
+    npm config get registry
+```     
+
+### 更改镜像地址的方法（以淘宝为例）：
 ```
   npm config set registry https://registry.npm.taobao.org --global
+```
+### 设置node源码的源：
+```
   npm config set disturl https://npm.taobao.org/dist --global
 ```
+
+
 配置后可通过下面方式来验证是否成功      
 ```npm config get registry```    
-或     
-```npm info express```
+
+查看指定包的信息    
+```
+    npm info xxxx(包名)
+```
 
 ### 临时使用
 npm --registry https://registry.npm.taobao.org install xxx
+
+
+
+
+
+
+
+
+# 切换NPM官方
+```
+   npm config set registry https://registry.npmjs.org
+   npm config get registry
+```
 
 
 
@@ -45,6 +72,7 @@ npm --registry https://registry.npm.taobao.org install xxx
 ```
   npm log
   npm publish
+  npm info xxxx(包名)
 ```
 
 
@@ -53,6 +81,7 @@ npm --registry https://registry.npm.taobao.org install xxx
 ```
   npm version patch
   npm publish
+  npm info xxxx(包名)
 ```
 
 # 撤销指定版本包
