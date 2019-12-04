@@ -9,9 +9,10 @@
 # 查看
 - 查找类 ```command + O```  
 - 回到光标上一处    ```alt + command + <--```
+- 转到类的声明（定义）  ```command + B```
 - 转接口实现    
 ```command+alt+B```  
-```command+alt+鼠标左键点击```
+```command+alt+鼠标左键```
 
 
 # 查找
