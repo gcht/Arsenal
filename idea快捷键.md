@@ -1,5 +1,5 @@
-
-
+# 编程
+- alt + enter
 
 # 调试
 - ctrl + R   运行
