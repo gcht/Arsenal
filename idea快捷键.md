@@ -1,5 +1,5 @@
 # 编程
-- alt + enter
+- alt + enter  自动import
 
 # 调试
 - ctrl + R   运行
