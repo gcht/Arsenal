@@ -1,6 +1,12 @@
 # 编程
 - alt + enter  自动import
 
+    | 功能        | 快捷键    |  说明  |
+    | --------   | -----:   | :----: |
+    | 自动import        | atl　 + enter      |       |
+    |  回到光标上一处       |   alt + command + 左箭头    |       |
+    |         |       |       |
+
 # 调试
 - ctrl + R   运行
 - ctrl + D   调试运行
