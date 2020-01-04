@@ -42,6 +42,8 @@ MNQ043JMTU-eyJsaWNlbnNlSWQiOiJNTlEwNDNKTVRVIiwibGljZW5zZWVOYW1lIjoiR1VPIEJJTiIsI
 
 ```
 
+# windows 10 破解
+- 参考 https://www.cnblogs.com/leton/p/12037696.html
 
 
 
