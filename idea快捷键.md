@@ -3,8 +3,8 @@
 
     | 功能        | 快捷键    |  说明  |
     | --------   | -----:   | :----: |
-    | 自动import        | atl　 + enter      |       |
-    |  回到光标上一处       |   alt + command + 左箭头    |       |
+    | 自动import        | atl　 + enter      |   重要    |
+    |  回到光标上一处       |   command + alt + 左箭头    |       |
     |         |       |       |
 
 # 调试
