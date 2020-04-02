@@ -19,6 +19,7 @@ ctrl + shift + \
 ⇧⌥F	
 
 ### 其他常用 Mac 快捷键	介绍
+```
 ⇧⌘P, F1	显示命令面板
 ⌘P	快速打开
 ⌥↓ / ⌥↑	移动当前行向 下/上
@@ -39,11 +40,11 @@ ctrl + shift + \
 ⌥⌘F	替换
 ⌘G / ⇧⌘G	查找下一个/上一个
 F2	重命名符号
-⇧⌘.	
-显示大纲
-
+⇧⌘.	显示大纲
+```
 ​
 ### 键盘定义
+```
 ⌘ == Command
 ⇧ == Shift
 ⇪ == Caps Lock
@@ -64,5 +65,5 @@ End == Fn + →
 ⇤ == 左制表符（Shift+Tab）
 ⎋ == Escape (Esc)
 ⏏ == 电源开关键
-
+```
 来源：https://blog.csdn.net/d_lds/article/details/63683624
