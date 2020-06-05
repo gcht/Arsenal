@@ -126,3 +126,16 @@ $ npm owner rmfreedom hello_freedom
 ```
 npm ls
 ```
+
+
+# npm 升级node
+mac 系统需要切换到root用户 sudo -u
+- 查看版本
+npm -v
+node -v
+- 更新npm版本
+  npm install -g npm
+- 更新node版本
+先清除npm缓存：npm cache clean -force    
+然后安装n模块：npm install -g n    
+升级node.js到最新稳定版：n stable     
