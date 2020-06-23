@@ -8,6 +8,9 @@ Welcome to the Arsenal wiki!
 > `kill 1592`
 
 # vscode
+# 插件
+ - GitLens
+ 
 ## 快捷键
 - F12 进入
 - alt + command + <-
