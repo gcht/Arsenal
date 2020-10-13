@@ -19,26 +19,22 @@
 ```
   
 # 发包
-- 命令
+- package.json版本号更改
 ```
-  npm log
+  npm version patch 版本号+1
+  npm version prerelease --preid=snapshot
+```
+
+- 发包命令
+```
   npm publish
-  npm version patch
-  npm version prerelease --preid=alpha
+  npm publish --tag snapshot
+  npm publish --tag snapshot-lang
+  npm publish --tag release
+  npm publish --tag yonui
+  npm publish --tag alpha
 ```
 
-
-# 更新发布的包
-### 正式包
-```
-  npm version patch
-  npm publish
-```
-
-### tag包  alpha
-```
- npm version prerelease --preid=alpha
-```
 # 撤销指定版本包
 
 ```
