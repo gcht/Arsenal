@@ -11,44 +11,39 @@
 
 
 # npm 切换淘宝镜像
-### 更改镜像地址的方法（以淘宝为例）：
+### 查看
 ```
-    npm config set registry https://registry.npm.taobao.org
-    npm config get registry
-```     
+  npm config get registry
+```
 
 ### 更改镜像地址的方法（以淘宝为例）：
 ```
+  npm config set registry https://registry.npm.taobao.org
+  npm config get registry
   npm config set registry https://registry.npm.taobao.org --global
+  npm config get registry
 ```
 ### 设置node源码的源：
 ```
   npm config set disturl https://npm.taobao.org/dist --global
 ```
-
-
-配置后可通过下面方式来验证是否成功      
-```npm config get registry```    
-
-查看指定包的信息    
+### 配置后可通过下面方式来验证是否成功      
 ```
-    npm info xxxx(包名)
+  npm config get registry```    
+```
+### 查看指定包的信息    
+```
+  npm info xxxx(包名)
 ```
 
 ### 临时使用
-npm --registry https://registry.npm.taobao.org install xxx
-
-
-
-
-
-
-
-
+```
+  npm --registry https://registry.npm.taobao.org install xxx
+```
 # 切换NPM官方
 ```
-   npm config set registry https://registry.npmjs.org
-   npm config get registry
+  npm config set registry https://registry.npmjs.org
+  npm config get registry
 ```
 
 
@@ -82,6 +77,13 @@ npm --registry https://registry.npm.taobao.org install xxx
   npm version patch
   npm publish
   npm info xxxx(包名)
+  
+  npm view abcdemo version       //查看现在包的版本
+
+  其他命令：
+  npm version patch  //修改x.y.z中z的数字升级，补丁版本
+  npm version minor  //修改x.y.z中y的数字提升，小修改版本
+  npm version major  //修改x.y.z中x的数字提升,大版本
 ```
 
 # 撤销指定版本包
