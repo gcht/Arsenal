@@ -1,6 +1,6 @@
 {
   "name": "arsenal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Welcome to the Arsenal wiki!",
   "main": "index.js",
   "scripts": {
