@@ -140,4 +140,25 @@ node -v
 - 更新node版本
 先清除npm缓存：npm cache clean -force    
 然后安装n模块：npm install -g n    
-升级node.js到最新稳定版：n stable     
+升级node.js到最新稳定版：n stable      
+
+先清除npm缓存：npm cache clean -force  
+先清除npm缓存：npm cache clean -force 
+
+
+# npm 清除npm缓存
+ [Node.js中相同模块是否会被加载多次？](https://blog.csdn.net/weixin_41049850/article/details/79510059)
+1. Node.js会从当前模块所在目录的node_modules（这里怎么不遵守Unix习惯，而使用了下划线呢？）开始找起，如果没找到再会去找上级目录的node_modules，直到根目录为止
+2. 手动安装npm install xxx 的xxx模块会和其他模块的***间接依赖***重复
+- 好处 多版本共存
+  当然，Node.js这种“重复加载”的影响也并非完全是负面的，至少它天然的解决了多版本共存的问题。  
+  例如，
+  express v2.5.2依赖mime v1.2.4，    
+  但我们程序自身又想使用mime v1.2.5。    
+  此时，express内部自然使用mime v1.2.4，而我们自己的程序使用的便是mime v1.2.5。    
+- 缺点 重复安装
+  - 想避免这种重复加载，这就必须手动地删除模块内部被间接依赖的模块，将其移动到模块查询路径的```公用部分``上了。
+  - 就目前看来，这些操作必须```手动```进行，因为npm在安装模块时不会关心依赖的模块是否已经安装过了（例如在NODE_PATH环境变量标识的路径里），它一定会重新下载所有依赖的模块。
+  - 如果您使用的是托管形式的Node.js服务，则很有可能无法做到这一点。
+
+   
