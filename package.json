@@ -1,6 +1,6 @@
 {
   "name": "nparsenal",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Welcome to the Arsenal wiki!",
   "main": "index.js",
   "scripts": {
