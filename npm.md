@@ -147,7 +147,7 @@ node -v
 
 
 # npm 清除npm缓存
- [Node.js中相同模块是否会被加载多次？](https://blog.csdn.net/weixin_41049850/article/details/79510059)
+ 参考 [Node.js中相同模块是否会被加载多次？](https://blog.csdn.net/weixin_41049850/article/details/79510059)
 1. Node.js会从当前模块所在目录的node_modules（这里怎么不遵守Unix习惯，而使用了下划线呢？）开始找起，如果没找到再会去找上级目录的node_modules，直到根目录为止
 2. 手动安装npm install xxx 的xxx模块会和其他模块的***间接依赖***重复
 - 好处 多版本共存
