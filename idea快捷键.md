@@ -1,16 +1,18 @@
 # 编程
 - alt + enter  自动import
 
-    | 功能                       | 快捷键    |  说明  |
-    | -----------------------   | -----------------:               | :-------------------:        |
-    | 自动import                 | atl　 + enter                     |   重要                       |
-    |  回到光标上（下）一处         |   command + alt + 左（右）箭头     |    重要                       |
-    |   转类定义                  |   command + B                    |                              |
-    |   转接口实现                |    command + alt + B              |                             |
-    |  delete 当前行             |    command + x                    |   编程快捷                    |
-    |  copy 当前行               |    command + d                    |   编程快捷                    |
-    |  copy 当前行               |    command + 左箭头                |   编程快捷                    |
-    |  copy 当前行               |    command + 右箭头                |    编程快捷                   |
+    | 功能                              | 快捷键                              |  说明                      |
+    | -----------------------          | -----------------:               | :-------------------:        |
+    |  自动import                        |   atl + enter                     |   重要                       |
+    |  回到光标上（下）一处                |   command + alt + 左（右）箭头     |    重要                       |
+    |  查找类                            |   command + O                    |                              |
+    |  转类定义                          |   command + B                    |                              |
+    |  转接口实现                         |   command + alt + B              |                             |
+    |                                   |                                   |                             |
+    |  delete 当前行                     |    command + x                    |   编程快捷                    |
+    |  copy 当前行                       |    command + d                    |   编程快捷                    |
+    |  光标跳到当前行最左边                |    command + 左箭头                |   编程快捷                    |
+    |  光标跳到当前行最左边                |    command + 右箭头                |    编程快捷                   |
 
 # 调试
 - ctrl + R   运行
